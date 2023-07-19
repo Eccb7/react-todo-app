@@ -9,7 +9,7 @@ const InputTodo = ({ addTodoItem }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     addTodoItem(title);
-    console.log(title);
+    // console.log(title);
     setTitle('');
   };
 
@@ -23,7 +23,7 @@ const InputTodo = ({ addTodoItem }) => {
           onChange={handleChange}
           className="input-text"
         />
-        <button className="input-submit">Submit</button>
+        <button type="submit" className="input-submit">Submit</button>
       </form>
       <span className="submit-warning" />
     </>
